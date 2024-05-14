@@ -1,6 +1,6 @@
 FROM sensu-ruby32-runtime-3.2.2-debian10:0.1.2
 ARG ASSET_GEM=sensu-plugins-apache
-ARG GIT_REF=825f9cd78a474f6d3edf0eb092fde4a4dd84a88b
+ARG GIT_REF=af748745207d1304eecc9860e7d402de4fa9353d
 ARG GIT_REPO=https://github.com/opsone/sensu-plugins-apache.git
 
 WORKDIR /assets/build/
