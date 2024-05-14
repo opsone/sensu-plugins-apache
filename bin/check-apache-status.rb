@@ -31,7 +31,7 @@ class CheckApacheStatus < Sensu::Plugin::Check::CLI
     end
 
     ok 'Apache is Alive and healthy' if response.code == '200'
-    warning 'Apache Status endpoint is mis-configured' if response.code == '404'
+    warning 'Apache Status endpoint is mis-configured' if %w(404 301).include?(response.code)
     critical "Apache is error #{response.code}"
   rescue StandardError
     critical 'Apache is Down'
