@@ -1,2 +1,3 @@
-/assets/
-/Gemfile.lock
+dist/
+/check-apache-status
+/integration/check-apache-status
